@@ -66,9 +66,12 @@
 		308C9ECF1E82AF6A004F2E4B /* ModuleExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModuleExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		308C9ED31E82AF6A004F2E4B /* ModuleExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleExampleUITests.swift; sourceTree = "<group>"; };
 		308C9ED51E82AF6A004F2E4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		308C9EE21E82B72B004F2E4B /* ModuleExample.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ModuleExample.playground; sourceTree = "<group>"; };
+		308C9EE21E82B72B004F2E4B /* 9.1-9.2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "9.1-9.2.playground"; sourceTree = "<group>"; };
 		308C9F0A1E82B815004F2E4B /* FrameworkA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FrameworkA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		308C9F381E8352B2004F2E4B /* FrameworkB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FrameworkB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30E3D8C11E86650E00739D4A /* 9.3.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 9.3.playground; sourceTree = "<group>"; };
+		30E3D8C21E86655000739D4A /* 9.4.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 9.4.playground; sourceTree = "<group>"; };
+		30E3D8C31E86673000739D4A /* OneMoreThing.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = OneMoreThing.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +132,10 @@
 				308C9EBA1E82AF6A004F2E4B /* Assets.xcassets */,
 				308C9EBC1E82AF6A004F2E4B /* LaunchScreen.storyboard */,
 				308C9EBF1E82AF6A004F2E4B /* Info.plist */,
-				308C9EE21E82B72B004F2E4B /* ModuleExample.playground */,
+				308C9EE21E82B72B004F2E4B /* 9.1-9.2.playground */,
+				30E3D8C11E86650E00739D4A /* 9.3.playground */,
+				30E3D8C21E86655000739D4A /* 9.4.playground */,
+				30E3D8C31E86673000739D4A /* OneMoreThing.playground */,
 			);
 			path = ModuleExample;
 			sourceTree = "<group>";
