@@ -7,12 +7,15 @@
 //
 
 import UIKit
-
+import FrameworkA
+import FrameworkB
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        print(FrameworkA.globalIntConstant)
+        print(FrameworkB.globalIntConstant)
     }
 
     override func didReceiveMemoryWarning() {

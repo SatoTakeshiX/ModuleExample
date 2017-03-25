@@ -14,6 +14,10 @@
 		308C9EBE1E82AF6A004F2E4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 308C9EBC1E82AF6A004F2E4B /* LaunchScreen.storyboard */; };
 		308C9EC91E82AF6A004F2E4B /* ModuleExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308C9EC81E82AF6A004F2E4B /* ModuleExampleTests.swift */; };
 		308C9ED41E82AF6A004F2E4B /* ModuleExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308C9ED31E82AF6A004F2E4B /* ModuleExampleUITests.swift */; };
+		308C9F0E1E82B94A004F2E4B /* FrameworkA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 308C9F0A1E82B815004F2E4B /* FrameworkA.framework */; };
+		308C9F0F1E82B94A004F2E4B /* FrameworkA.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 308C9F0A1E82B815004F2E4B /* FrameworkA.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		308C9F391E8352B2004F2E4B /* FrameworkB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 308C9F381E8352B2004F2E4B /* FrameworkB.framework */; };
+		308C9F3A1E8352B2004F2E4B /* FrameworkB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 308C9F381E8352B2004F2E4B /* FrameworkB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +37,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		308C9F101E82B94A004F2E4B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				308C9F3A1E8352B2004F2E4B /* FrameworkB.framework in Embed Frameworks */,
+				308C9F0F1E82B94A004F2E4B /* FrameworkA.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		308C9EB01E82AF6A004F2E4B /* ModuleExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModuleExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		308C9EB31E82AF6A004F2E4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +66,9 @@
 		308C9ECF1E82AF6A004F2E4B /* ModuleExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModuleExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		308C9ED31E82AF6A004F2E4B /* ModuleExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleExampleUITests.swift; sourceTree = "<group>"; };
 		308C9ED51E82AF6A004F2E4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		308C9EE21E82B72B004F2E4B /* ModuleExample.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ModuleExample.playground; sourceTree = "<group>"; };
+		308C9F0A1E82B815004F2E4B /* FrameworkA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FrameworkA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		308C9F381E8352B2004F2E4B /* FrameworkB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FrameworkB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				308C9F391E8352B2004F2E4B /* FrameworkB.framework in Frameworks */,
+				308C9F0E1E82B94A004F2E4B /* FrameworkA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +101,8 @@
 		308C9EA71E82AF6A004F2E4B = {
 			isa = PBXGroup;
 			children = (
+				308C9F381E8352B2004F2E4B /* FrameworkB.framework */,
+				308C9F0A1E82B815004F2E4B /* FrameworkA.framework */,
 				308C9EB21E82AF6A004F2E4B /* ModuleExample */,
 				308C9EC71E82AF6A004F2E4B /* ModuleExampleTests */,
 				308C9ED21E82AF6A004F2E4B /* ModuleExampleUITests */,
@@ -103,6 +129,7 @@
 				308C9EBA1E82AF6A004F2E4B /* Assets.xcassets */,
 				308C9EBC1E82AF6A004F2E4B /* LaunchScreen.storyboard */,
 				308C9EBF1E82AF6A004F2E4B /* Info.plist */,
+				308C9EE21E82B72B004F2E4B /* ModuleExample.playground */,
 			);
 			path = ModuleExample;
 			sourceTree = "<group>";
@@ -135,6 +162,7 @@
 				308C9EAC1E82AF6A004F2E4B /* Sources */,
 				308C9EAD1E82AF6A004F2E4B /* Frameworks */,
 				308C9EAE1E82AF6A004F2E4B /* Resources */,
+				308C9F101E82B94A004F2E4B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -193,6 +221,7 @@
 				TargetAttributes = {
 					308C9EAF1E82AF6A004F2E4B = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = WNEUDLL4LF;
 						ProvisioningStyle = Automatic;
 					};
 					308C9EC31E82AF6A004F2E4B = {
@@ -412,6 +441,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WNEUDLL4LF;
 				INFOPLIST_FILE = ModuleExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.personal-factory.ModuleExample";
@@ -424,6 +454,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WNEUDLL4LF;
 				INFOPLIST_FILE = ModuleExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.personal-factory.ModuleExample";
@@ -505,6 +536,7 @@
 				308C9EDA1E82AF6A004F2E4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		308C9EDB1E82AF6A004F2E4B /* Build configuration list for PBXNativeTarget "ModuleExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +545,7 @@
 				308C9EDD1E82AF6A004F2E4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		308C9EDE1E82AF6A004F2E4B /* Build configuration list for PBXNativeTarget "ModuleExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +554,7 @@
 				308C9EE01E82AF6A004F2E4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
